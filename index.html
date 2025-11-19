@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>École de Robotique & IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"><img src="image/erinov-logoo.png" width="140px" height="60px"></div>
+            <nav class="navbar">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#formation">Formation</a>
+                <a href="#evenement">Événement</a>
+                <a href="#produit">Produit</a>
+                <a href="#contact">Contactez-nous</a>
+            </nav>
+            <button class="btn-inscribe">S'inscrire</button>
+        </div>
+    </header>
+
+    <!--  ACCUEIL -->
+    <section id="accueil" class="section hero">
+        <div class="hero-content">
+            <h1>Bienvenue à l'École ERINOV</h1>
+            <p>Explorez le futur de la technologie et de l'innovation</p>
+            <button class="btn-primary">Découvrir Plus</button>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section about">
+        <div class="section-inner">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À Propos de Notre École</h2>
+                    <p>Erinnov est une institution qui propose des services de haute qualité dans les domaines de la robotique, de l’électronique et de l’intelligence artificielle. Elle est née d’une équipe d’ingénieurs et de concepteurs spécialisés dont l’objectif est de mettre à profit leurs acquis et leur expertise pour simplifier les sciences technologiques modernes auprès des jeunes, à travers des méthodes pédagogiques et des formations efficaces. Elle facilite ainsi l’apprentissage et l’acquisition de compétences en programmation et en ingénierie, afin de permettre une participation active au développement et à la production, en fidélité à sa responsabilité sociale.</p>
+                    <p>Notre mission est de fournir une éducation de qualité qui prépare les étudiants aux défis technologiques du monde moderne.</p>
+                </div>
+                <
+            </div>
+        </div>
+    </section>
+
+    <!--  FORMATION -->
+    <section id="formation" class="section formation">
+        <div class="section-inner">
+            <h2>Nos Formations</h2>
+            
+            <div class="carousel-horizontal">
+                <button class="carousel-arrow prev" onclick="slideFormation(-1)">❮</button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="formationTrack">
+                        
+                        <div class="card">
+                            <img src="image/f1.jpg" alt="Formation IA" class="clickable-image" onclick="openModal(this.src, 'Formation IA')">
+                            <h3>Arduino</h3>
+                            <p></p>
+                        </div>
+                        <div class="card">
+                            <img src="image/f2.jpg" alt="Formation Programmation" class="clickable-image" onclick="openModal(this.src, 'Formation Programmation')">
+                            <h3>EV3 logo</h3>
+                            <p></p>
+                        </div>
+                        <div class="card">
+                            <img src="image/f3.jpg" alt="Formation Avancée" class="clickable-image" onclick="openModal(this.src, 'Formation Avancée')">
+                            <h3>3D printer </h3>
+                            <p></p>
+                        </div>
+                        <div class="card">
+                            <img src="image/f4.jpg" alt="Formation Web" class="clickable-image" onclick="openModal(this.src, 'Formation Web')">
+                            <h3>Matatalab</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-arrow next" onclick="slideFormation(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!--  ÉVÉNEMENT -->
+    <section id="evenement" class="section events">
+        <div class="section-inner">
+            <h2>Nos Événements</h2>
+            
+            <div class="carousel-horizontal">
+                <button class="carousel-arrow prev" onclick="slideEvents(-1)">❮</button>
+                 <div class="carousel-viewport">
+                    <div class="carousel-track" id="eventsTrack">
+                        
+                        <div class="event-card">
+                            <img src="image/e1.jpg" alt="Conférence" class="clickable-image" onclick="openModal(this.src, 'summer Tech')">
+                            <h3>Digitale summer </h3>
+                            <p>Un programme d’été riche en apprentissage et en amusement, spécialement conçu pour développer les compétences technologiques et créatives de vos enfants dans un environnement ludique et stimulant. 👨‍💻🎨🎉
+
+                                Au programme :
+
+                                initiation à la programmation et à la robotique,
+
+                                compréhension des algorithmes,
+
+                                ateliers d’anglais,
+
+                                et une variété d’activités éducatives et récréatives.
+
+                                Un été pour apprendre, créer et s’épanouir !</p>
+                        </div>
+                        
+                        <div class="event-card">
+                            <img src="image/e2.jpg" alt="Conférence" class="clickable-image" onclick="openModal(this.src, 'Wajihni')">
+                            <h3>Wajihni Techh</h3>
+                            <p>Ce programme offre des rencontres d’orientation en présentiel animées par des ingénieurs, des étudiants universitaires et des enseignants spécialisés.
+                                Il a pour objectif de vous aider à :
+
+                                comprendre les différences entre les diverses filières techniques,
+
+                                découvrir la réalité de la vie universitaire et apprendre à faire un bon choix d’orientation,
+
+                                connaître les perspectives et opportunités professionnelles liées à chaque spécialité</p>
+                        </div>
+                        <div class="event-card">
+                            <img src="image/e3.jpg" alt="Conférence" class="clickable-image" onclick="openModal(this.src, 'Ramadan Tech')">
+                            <h3>Ramadan Tech</h3>
+                            <p>Découvrez un parcours complet pour initier vos enfants aux technologies modernes :
+
+                                🔰 Robotique et Arduino – le plaisir de programmer et de créer des systèmes interactifs
+                                🔰 Électricité simplifiée – comprendre les bases de manière pratique et amusante
+                                🔰 Conception et impression 3D – imaginer, modéliser et fabriquer ses propres objets
+                                🔰 Initiation au langage Python et introduction à l’intelligence artificielle – les premières étapes vers le monde du futur</p>
+                        </div>
+                        <div class="event-card">
+                            <img src="image/e4.jpg" alt="Expo Tech" class="clickable-image" onclick="openModal(this.src, 'Tagsira Tech')">
+                            <h3>Tagsira Tech</h3>
+                            <p>C’est un programme qui vise à proposer des discussions ouvertes et directes avec des experts dans les domaines de la technologie.
+
+                                Le programme se concentre sur l’analyse des sujets actuels et des dernières évolutions dans le monde technologique.
+
+                                Il met également en lumière les innovations et les défis auxquels le secteur fait face, tout en travaillant à renforcer la culture numérique auprès du public et à lui apprendre à utiliser les technologies de manière sûre et efficace.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-arrow next" onclick="slideEvents(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!--  IMAGES  -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="/placeholder.svg" alt="">
+            <h3 id="modalTitle"></h3>
+        </div>
+    </div>
+
+    <!--  PRODUIT -->
+    <section id="produit" class="section products">
+        <div class="section-inner">
+            <h2>Nos Produits</h2>
+            <p class="section-description">Découvrez nos kits pédagogiques et solutions technologiques</p>
+            
+            </div>
+            <div class="products-button-container">
+                <a href="https://erinov.com/shop/" class="btn-primary">Voir Tous les Produits</a>
+            </div>
+        </div>
+    </section>
+
+    <!--  STATISTIQUES (MOVED BEFORE CONTACT) -->
+    <section id="stats" class="section stats">
+        <div class="section-inner">
+            <h2>Statistiques de Notre École</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <h3>75+</h3>
+                    <p>Formateurs Experts</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <h3>2000+</h3>
+                    <p>Etudiens</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <h3>10+</h3>
+                    <p>Ans d'Expérience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="section-inner">
+            <h2>Contactez-Nous</h2>
+            <div class="contact-container">
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Votre Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Votre Email</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Quel est le sujet ?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer le Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p><strong>École de Robotique & IA</strong></p>
+                <p class="footer-address">
+                    📍 123 Rue de l'Innovation<br>
+                    75000 Alger,Algerie<br>
+                    📞 +213 2 23 45 67 89<br>
+                    ✉️ contact@ecole-robotique.fr
+                </p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="social-icon" title="Instagram"><img src="image/insta.png" width="40px" height="40px"></a>
+                <a href="#" class="social-icon" title="Facebook"><img src="image/face.png" width="40px" height="40px"></a>
+                <a href="#" class="social-icon" title="LinkedIn"><img src="image/link.png" width="40px" height="40px"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
